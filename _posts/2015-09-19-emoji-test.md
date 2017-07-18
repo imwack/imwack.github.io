@@ -1,6 +1,6 @@
 ---
 title: Emoji Test
-tags:
+category: Photo
 ---
 
 This is an emoji test. :smile:
