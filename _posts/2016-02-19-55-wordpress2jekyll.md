@@ -4,8 +4,8 @@ title: "WordPress转移到jekyll"
 date: 2017-7-16 18:28
 author: wack
 comments: true
-categories: [Jekyll, GitHub]
-tags: [Jekyll, GitHub]
+categories: [Jekyll]
+tags: [Jekyll]
 ---
  
 今天把WordPress转移到了GitHub Page上，费了很大功夫，故记录一下~
