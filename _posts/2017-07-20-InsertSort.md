@@ -27,7 +27,7 @@ tags: [Algorithm,sort]
 				int j=i-1;
 				int x=a[i];		//记录当前元素i
 				a[i] = a[i-1];	//i元素等于i-1
-				while(x<a[j]){	//往前移动 直到找到一个比i小的
+				while(j>=0 && x<a[j]){	//往前移动 直到找到一个比i小的
 					a[j+1] = a[j];
 					j--;		
 				} 
