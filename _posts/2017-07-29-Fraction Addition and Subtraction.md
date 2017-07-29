@@ -16,7 +16,7 @@ Given a string representing an expression of fraction addition and subtraction, 
 
 大概意思就是计算分数的加减法
 
-<code class="hljs livecodeserver">{% highlight ruby %}
+{% highlight c++ %}
 
 	class Solution {
 	public:
@@ -51,4 +51,4 @@ Given a string representing an expression of fraction addition and subtraction, 
 	}
 	};
 
-{% endhighlight %}</code>
+{% endhighlight %}
