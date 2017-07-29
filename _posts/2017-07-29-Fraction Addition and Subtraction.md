@@ -13,8 +13,8 @@ Given a string representing an expression of fraction addition and subtraction, 
 	Example 1:
 	Input:"-1/2+1/2"
 	Output: "0/1"
-大概意思就是计算分数的加减法
 
+大概意思就是计算分数的加减法
 
 <code class="hljs livecodeserver">{% highlight ruby %}
 
