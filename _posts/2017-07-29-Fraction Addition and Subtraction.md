@@ -15,6 +15,9 @@ Given a string representing an expression of fraction addition and subtraction, 
 	Output: "0/1"
 大概意思就是计算分数的加减法
 
+
+<code class="hljs livecodeserver">{% highlight ruby %}
+
 	class Solution {
 	public:
 	    int gcd(int a, int b){
@@ -47,3 +50,5 @@ Given a string representing an expression of fraction addition and subtraction, 
 		return  to_string(A) + '/' + to_string(B);
 	}
 	};
+
+{% endhighlight %}</code>

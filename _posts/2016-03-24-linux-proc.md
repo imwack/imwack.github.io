@@ -4,7 +4,7 @@ title: "linux用户空间与内核交互"
 date: 2016-03-24 21:38
 author: imwack
 comments: true
-categories: [Linux, 内核]
+categories: [Linux]
 tags: []
 ---
 
