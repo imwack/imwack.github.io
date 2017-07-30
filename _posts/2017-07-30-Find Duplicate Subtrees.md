@@ -24,26 +24,26 @@ tags: [Algorithm,LeetCode]
 
 {% highlight c++ %}
 
-	class Solution {
-	public:
-	
-	    string PreOrder(TreeNode *root, map<string, vector<TreeNode*>> &m){
-	        if (root == nullptr) return "#";
-	        string temp = to_string(root->val) + PreOrder(root->left,m) + PreOrder(root->right,m);
-	        m[temp].push_back(root);
-	        return temp;
-	    }
-	    vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {
-	        vector<TreeNode*> ret;
-	        map<string, vector<TreeNode*>> m;
-	        PreOrder(root, m);
-	        for (auto it = m.begin(); it != m.end(); it++){
-	            if (it->second.size() > 1)
-	                ret.push_back(it->second[0]);
-	        }
-	
-	        return ret;
-	    }
-	};
+class Solution {
+public:
+
+    string PreOrder(TreeNode *root, map<string, vector<TreeNode*>> &m){
+        if (root == nullptr) return "#";
+        string temp = to_string(root->val) + PreOrder(root->left,m) + PreOrder(root->right,m);
+        m[temp].push_back(root);
+        return temp;
+    }
+    vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {
+        vector<TreeNode*> ret;
+        map<string, vector<TreeNode*>> m;
+        PreOrder(root, m);
+        for (auto it = m.begin(); it != m.end(); it++){
+            if (it->second.size() > 1)
+                ret.push_back(it->second[0]);
+        }
+
+        return ret;
+    }
+};
 
 {% endhighlight %}
